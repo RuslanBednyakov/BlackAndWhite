@@ -1,0 +1,20 @@
+.menu {
+  height: 30px;
+  background: $black;
+  &__list {
+    display: flex;
+    height: 100%;
+    color: $white;
+    font-weight: bold;
+    &_item {
+      box-sizing: border-box;
+      padding: 6px 25px;
+      border-right: 1px solid $grey;
+      height: 100%;
+      &:hover {
+        background: $grey;
+        color: $black;
+      }
+    }
+  }
+} 

@@ -1,0 +1,8 @@
+.footer {
+  padding: 10px 0;
+  color: $grey;
+  &__link {
+    color: blue;
+    text-decoration: underline;
+  }
+}

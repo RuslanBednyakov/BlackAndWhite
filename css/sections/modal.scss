@@ -1,0 +1,117 @@
+.modal {
+  // display: table;
+  // text-align:center;
+  // vertical-align:middle;
+  // position: absolute;
+  // left: 0;
+  position: fixed;
+  display: table;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform:scaleY(.01) scaleX(0);
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+
+  &__background {
+    background: rgba(226, 226, 226, 0.8);
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+
+  }
+
+  &__container {
+    display: inline-block;
+    // width: 20%;
+    background: $white;
+    padding: 30px;
+    // position: absolute;
+    // top: 20%;
+    // left: 40%;
+    transform: translate(-50%, -50%);
+    border: 1px solid $grey;
+    box-shadow: 0px 0px 3px 0px #c0c0c0;
+    border-radius: 5px;
+    &_tittle {
+      font: 30px bold;
+      color: $grey;
+      &::first-letter {
+        color: $black;
+      }
+    }
+
+    &_text {
+      margin-top: 10px;
+    }
+
+    &_button {
+      cursor: pointer;
+      box-sizing: border-box;
+      margin-top: 30px;
+      height: 40px;
+      width: 95px;
+      border: 1px solid $black;
+      background-color: rgb(32, 32, 32);
+      font: 14px bold Arial;
+      color: $white;
+      &:hover {
+        background: $grey;
+        color: $black;
+      }
+    }
+
+    transform:scale(0);
+    animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  }
+}
+
+.out {
+  transform:scale(1);
+  animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  .modal__container {
+    animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  }
+}
+
+@keyframes unfoldIn {
+  0% {
+    transform:scaleY(.005) scaleX(0);
+  }
+  50% {
+    transform:scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform:scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes unfoldOut {
+  0% {
+    transform:scaleY(1) scaleX(1);
+  }
+  50% {
+    transform:scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform:scaleY(.005) scaleX(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform:scale(0);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform:scale(1);
+  }
+  100% {
+    transform:scale(0);
+  }
+}

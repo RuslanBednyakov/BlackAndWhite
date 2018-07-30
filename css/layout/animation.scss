@@ -1,0 +1,11 @@
+@keyframes change_color_even {
+  from {background-color: blue}
+  50% {background-color: red;}
+  to {background-color: green;}
+}
+
+@keyframes change_color_odd {
+  from {background-color: yellow}
+  50% {background-color: pink;}
+  to {background-color: orange;} 
+}

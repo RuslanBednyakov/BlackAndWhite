@@ -1,0 +1,12 @@
+
+@mixin fira($style: 'regular') {
+    @if $style == 'regular'{
+        font-family: 'FiraSans-Regular';
+    } @else if ($style == 'bold') {
+        font-family: 'FiraSans-Bold';
+    } @else if ($style == 'awesome') {
+        font-family: 'FontAwesome';
+    } @else if ($style == 'medium') {
+        font-family: 'FiraSans-Medium';
+    }
+}
