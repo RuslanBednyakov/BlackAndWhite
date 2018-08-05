@@ -6,17 +6,13 @@ $white: rgb(255, 255, 255);
 
 // Adjustment
 @import "layout/normalize.scss";
-@import "layout/fonts.scss";
-@import "layout/font-awesome.scss";
-@import "layout/font-awesome.min.scss";
-@import "layout/mixin.scss";
 @import "layout/adjustment.scss";
 @import "layout/animation.scss";
 
 
 // Sections
 @import "sections/header.scss";
-@import "sections/slaider.scss";
+@import "sections/slider.scss";
 @import "sections/navigation.scss";
 @import "sections/info.scss";
 @import "sections/footer.scss";
