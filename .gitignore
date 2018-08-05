@@ -1,6 +1,6 @@
-.git/
+.git
 prepros-6.config
 css/prepros-6.config
-css/layout/
-css/sections/
+css/layout
+css/sections
 css/main.scss
