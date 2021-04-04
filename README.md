@@ -1,6 +1,5 @@
 # BlackAndWhite
-Welcome to my website. This is my first time making something like this. At the moment i'm just starting my long-long road 
-in the world of web-development.
+Welcome to my website.
 
 
 ## Installation
