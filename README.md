@@ -15,5 +15,3 @@ then change into that folder
 I'll be very happy for any input and potential contributions for this project.
 
 Firstly raise an issue. Then if you are assigned to that issue fork the repo, make your edits and make a pull request.
-
-I hope you enjoy my first work :)
